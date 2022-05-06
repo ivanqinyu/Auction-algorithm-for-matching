@@ -1,0 +1,289 @@
+Week 0
+Read auction algorithm paper
+----------------------------------------------
+Week 1 (11.24)
+Import the data from TSnap (Facebook)
+Generate the Random dataset
+Transfer Facebook/Random data to bipartite graph
+Link to boost graph library, check is it a matching
+----------------------------------------------
+Week 2 (11.30)
+Built-in Matching
+Auction Matching
+----------------------------------------------
+Week 3 (12.7)
+Create the Semi-complete data
+Fix Auction Matching
+Link to Gnuplot
+----------------------------------------------
+Week 4(12.16-1.6)
+
+Add hash map data structure
+查什么时候能最佳
+epilson
+----------------------------------------------
+Week 5 （1.31）
+
+semicomplete 图 
+1. eplsilon 小于一定数字就够了
+2. iteration 超过一定后（找到最大matching）就不涨了
+	If we want to find all matchings, we need choose epsilon small enough, so epsilon has an upper bound
+	Iteration has a lower bound											
+3.facebook 0.0005， 800 0000
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------
+Week 6 (2.4)
+
+1. What happened in third iteration?
+
+	1st : 
+	+int ((num_of_maximum_matching+1)/2)
+
+	3rd :
+	+int ((num_of_maximum_matching+2)/4)
+
+	7th:
+	+int ((num_of_maximum_matching+8)/16)
+
+	
+2. Graph.
+	90% 500
+	90% 50
+	80% 500
+	80% 50
+
+3. More aggressive Epsilon
+	if the algorithm meets following requirement, 
+	 1. 3 continuous iterations has no change, 
+	 2. After 11th iteration,
+	 3. If there has a change we set the epsilon back to origin epsilon (0.01)
+
+	then we increase the epsilon,
+	and once get 97% we stop,
+
+
+	
+4. The real world data, very hard
+
+
+
+
+------------------------------------------
+
+Week 7 plan (2.11)
+
+1. Quality
+
+Real case no improvement,	change epsilon
+
+Additive epsilon
+
+Power of 2 graph
+
+Other practical real worlds graph
+
+2. Timer
+
+
+
+
+------------------------------------------
+
+Week 7 (2.11)
+
+
+1. Real graph fix (much less iteration).
+
+
+2. 	Additive epsilon is not good.
+	multiple epsilon performs better on semi complete graph.
+
+
+3. Power of 2 graph
+	
+	
+	1st : 
+	+int ((num_of_maximum_matching+1)/2)
+
+	3rd :
+	+int ((num_of_maximum_matching+2)/4)
+
+	7th:
+	+int ((num_of_maximum_matching+8)/16)
+
+4. Google plus Dataset (nodes:107,614 edges:13,673,453)
+ UNFINISHED
+
+5. Timer 
+ UNFINISHED
+
+
+
+
+-------------
+Week 8 (2.18)
+
+1. track and draw
+	epsilon = 1/n	
+
+
+2. Hash table for google dataset 
+	write a transfer script
+
+3. Timer
+
+
+
+----------
+
+Week 9 (2.24)
+
+
+1. Proof of iteration 
+
+2. Google
+
+3. Timer
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------
+Week 10 (3.3)
+
+1. Google dataset
+
+Google dataset has 42567 edges with build-in algorithm
+
+Google dataset has 42451 (99.7%) edges with auction algorithm in 100 iteration
+
+Google dataset has 42567 (100%) edges with auction algorithm in 920 iteration
+
+
+1,34098
+2,34098
+3,38225
+4,39095
+5,39899
+6,40322
+7,40609
+8,40826
+9,41020
+10,41176
+11,41266
+12,41359
+13,41440
+14,41498
+15,41562
+16,41621
+17,41669
+18,41720
+19,41760
+20,41799
+21,41845
+22,41876
+23,41894
+24,41924
+25,41949
+26,41966
+27,41981
+28,41995
+29,42010
+30,42034
+31,42056
+32,42073
+33,42097
+34,42110
+35,42125
+36,42135
+37,42149
+38,42162
+39,42170
+40,42180
+41,42188
+42,42200
+43,42207
+44,42216
+45,42224
+46,42233
+47,42244
+48,42250
+49,42257
+50,42260
+51,42271
+52,42275
+53,42280
+54,42287
+55,42294
+56,42305
+57,42308
+58,42313
+59,42315
+60,42319
+61,42328
+62,42336
+63,42341
+64,42346
+65,42354
+66,42362
+67,42363
+68,42365
+69,42368
+70,42372
+71,42375
+72,42381
+73,42383
+74,42386
+75,42387
+76,42392
+77,42392
+78,42394
+79,42396
+80,42400
+81,42400
+82,42404
+83,42407
+84,42413
+85,42415
+86,42418
+87,42420
+88,42423
+89,42426
+90,42432
+91,42434
+92,42438
+93,42441
+94,42441
+95,42441
+96,42442
+97,42445
+98,42447
+99,42451
+
+2. Change data structure
+
+3. Run time (excel Sheet 3)
+
+
+
+
+
+
